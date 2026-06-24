@@ -2,34 +2,34 @@
 #include <vector>
 using namespace std;
 
-class Node{
-    public:
-    int data;
-    Node *next;
+// class Node{
+//     public:
+//     int data;
+//     Node *next;
 
-    //Constructor
-    Node(int val){
-        data= val;
-        next=NULL;
-    }
-};
+//     //Constructor
+//     Node(int val){
+//         data= val;
+//         next=NULL;
+//     }
+// };
 
-void func1(int x){
-        cout<<"Value of x:"<< x <<endl;
-    }
+// void func1(int x){
+//         cout<<"Value of x:"<< x <<endl;
+//     }
 
 //Pass by value used to not change the value just make a copy of original var
-int func2(int y){
-        int ans=2*y;
-        return ans;
-    }
+// int func2(int y){
+//         int ans=2*y;
+//         return ans;
+//     }
 
 
 //  Pass by reference  used to change the original var value
-void doubleTheValue(int &num){
-    num*=2;
-    cout<<"Inside:"<<num<<endl;
-}
+// void doubleTheValue(int &num){
+//     num*=2;
+//     cout<<"Inside:"<<num<<endl;
+// }
 
 
 int main(){
@@ -115,26 +115,42 @@ int main(){
 
     // Vectors:
 
-    vector<int> vec1={1,2,3,4,5};
-    cout<<vec1[4]<<endl;
-    cout<<vec1.at(4)<<endl;
-    cout<<"while Pushing_back 7 in vec1:"<<endl;
-    vec1.push_back(7);
+    // vector<int> vec1={1,2,3,4,5};
+    // cout<<vec1[4]<<endl;
+    // cout<<vec1.at(4)<<endl;
+    // cout<<"while Pushing_back 7 in vec1:"<<endl;
+    // vec1.push_back(7);
     
-    for(int i:vec1){
-        cout << i<< endl;
-    }
-    cout<<"while Pop_back vec1:"<<endl;
+    // for(int i:vec1){
+    //     cout << i<< endl;
+    // }
+    // cout<<"while Pop_back vec1:"<<endl;
 
-    vec1.pop_back();
-    for(int i:vec1){
-        cout << i<< endl;
-    }
+    // vec1.pop_back();
+    // for(int i:vec1){
+    //     cout << i<< endl;
+    // }
 
 
-    cout<<"After using clear() vec1 :"<<endl;
-    vec1.clear();
-    for(int i:vec1){
-        cout << i<< endl;
-    }
+    // cout<<"After using clear() vec1 :"<<endl;
+    // vec1.clear();
+    // for(int i:vec1){
+    //     cout << i<< endl;
+    // }
+
+    // Complexity:
+    //Time complexity: how ,much time an algorithm takes as input size increases
+
+    //Big O: represents the upper bound of running time, it gives the worst case scenerio for an algorithm,it describes the maximum time a algo can take
+    //O(1): constant time : the time taken doesn't depend on the input size , algo always runs in the same time
+    // O(n): linear time: the time grows directly propotional to input size
+    // O(log n): logarrithmic time : the time grows logarithically as the input size increases ,often seen in algos thet divide that input in half like binary serach
+    // O(n logn): linearithmic: mix of linear  and logerithmic ,quick sort and merge sort  sorts as well as half also
+    //O(n^2): quadratic : time will grow propotionaly to the square of input size 
+
+
+
+
+
+    
 }
