@@ -55,7 +55,7 @@ void printValuesOfevenDataLinkList(Node* &head){
 }
 
 
-void insertInBetween(Node* head,int pos,int val){
+void insertInBetween(Node*&head,int pos,int val){
     Node* node=new Node(val);
 
     if(pos==1){
@@ -70,6 +70,41 @@ void insertInBetween(Node* head,int pos,int val){
     node->next= temp->next;
     temp->next= node;
 }
+
+void deletionAtEnd(Node*&head){
+    if(head->next==NULL){
+        delete head;
+        head=NULL;
+        return;
+        
+    }
+    if(head==NULL){
+        return;
+    }
+
+    Node* temp =head;
+
+    while(temp->next->next !=NULL){
+        temp=temp->next;
+    }
+    delete temp->next;
+    temp->next=NULL;
+}
+
+void DeletionFromFront(Node*&head){
+
+    if(head==NULL){
+        return;
+    }
+    
+    Node* temp=head;
+    head=head->next;
+    delete temp;
+
+
+}
+
+void deletionAtNthPosition(Node* )
 
 int main(){
     // Node *node1= new Node(4);
