@@ -1,7 +1,7 @@
 Node* curr=head;
 int count=0;
 while(curr!=NULL && count<k){
-    curr=curr-next;
+    curr=curr->next;
     count++;
 }
 if(count==k){
