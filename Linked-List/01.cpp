@@ -123,7 +123,6 @@ void deletionAtNthPosition(Node* &head,int pos){
     temp2=temp->next;
     temp->next=temp->next->next;
     delete temp2;
-    temp2=NULL;
 }
 
 int main(){

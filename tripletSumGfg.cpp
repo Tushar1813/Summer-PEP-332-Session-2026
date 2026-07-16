@@ -15,7 +15,7 @@ class Solution {
                     e--;
                 }
                 else{
-                    s++;
+                    s++;1
                 }
                 
             }
