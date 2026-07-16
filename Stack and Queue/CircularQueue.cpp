@@ -13,8 +13,9 @@ class myCircularQueue{
 
     bool enQueue(int val){
         if(isFull()){
-            rear=(rear+1)%size;
+            return false;
         }
+        rear=(rear+1)%size;
         data[rear]=val;
         count++;
         return true;
